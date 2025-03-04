@@ -1,0 +1,23 @@
+[package]
+name = "service-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Async
+tokio = { version = "1.43.0", features = ["full"] }
+async-trait = "0.1.87"
+dashmap = "6.1.0"
+
+# Error handing
+anyhow = "1.0.97"
+
+# Other
+tracing = "0.1.41"
+itertools = "0.14.0"
+tokio-util = "0.7.13"
+thiserror = "2.0.12"
+
+[dev-dependencies]
+rstest = "0.25.0"
+assert_matches = "1.5.0"
